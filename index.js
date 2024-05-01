@@ -1,5 +1,7 @@
-let home = document.getElementById(homescore);
-let guest = document.getElementById(guestscore);
+let home = 0;
+let guest = 0;
+let homeScore = document.getElementById(homescore);
+let guestScore = document.getElementById(guestscore);
 
 function incrementHomeOne() {
     home += 1;
@@ -32,6 +34,8 @@ function incrementGuestThree() {
 }
 
 function reset() {
+    home = 0;
+    guest = 0;
     homescore.textContent = 0;
     guestscore.textContent = 0;
 }
